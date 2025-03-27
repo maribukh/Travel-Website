@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-comm travel</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="./assets/media.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="main-background">
+        <header>
+          <div class="left-side">
+            <a class="no-opacity" href="#">
+              <img src="./assets/images/logo.svg" alt="logo" />
+            </a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Hotels</a></li>
+              <li><a href="#">Restourants</a></li>
+              <li><a href="#">Tours</a></li>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="#">Activities</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="right-side">
+            <div class="text">
+              <p>Holla,</p>
+              <p class="semibold">Ales Nesetril</p>
+            </div>
+            <div class="profile-photo">
+              <img
+                src="./assets/images/circle-red.svg"
+                alt="circle"
+                class="circle"
+              />
+              <img
+                src="./assets/images/profile-picture.svg"
+                alt="profile"
+                class="photo"
+              />
+            </div>
+            <img
+              class="menu-icon d-none"
+              src="./assets/images/icons/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="...loading"
+            />
+          </div>
+        </header>
+        <div class="hero-section">
+          <div class="hero-title">
+            <h1 class="discover">Discover the most engaging places</h1>
+            <h1 class="mobile d-none">Discover popular places</h1>
+          </div>
+          <button class="hero-button semibold">
+            <img src="./assets/images/global.svg" alt="global" />Discover on 3D
+            Globe
+          </button>
+          <div class="animation">
+            <img src="./assets/images/anim-img/plane.svg" alt="...loading" />
+          </div>
+          <div class="hero-search">
+            <div class="search-location">
+              <div class="left-side hero-margin">
+                <img src="./assets/images/icons/location.svg" alt="location" />
+              </div>
+              <div class="right-side">
+                <p class="p-300">Location</p>
+                <select name="#" id="1">
+                  <option class="p-500" value="#">Explore</option>
+                  <option value="#">USA</option>
+                  <option value="#">Italia</option>
+                  <option value="#">China</option>
+                </select>
+              </div>
+            </div>
+            <div class="search-activity">
+              <div class="left-side hero-margin">
+                <img src="./assets/images/icons/ride.svg" alt="ride" />
+              </div>
+              <div class="right-side">
+                <p class="p-300">Activity</p>
+                <select name="#" id="3">
+                  <option class="p-500" value="#">All Activities</option>
+                  <option value="#">Skiing</option>
+                  <option value="#">Hiking</option>
+                  <option value="#">Climbing</option>
+                  <option value="#">Sailing</option>
+                </select>
+              </div>
+            </div>
+            <div class="search-date">
+              <div class="left-side hero-margin">
+                <img src="./assets/images/icons/date.svg" alt="date" />
+              </div>
+              <div class="right-side">
+                <p class="p-300">When</p>
+                <input type="date" value="" max="2026-12-31" />
+              </div>
+            </div>
+            <div class="search-guests">
+              <div class="left-side hero-margin">
+                <img src="./assets/images/icons/group.svg" alt="date" />
+              </div>
+              <div class="right-side">
+                <p class="p-300">Guests</p>
+                <select name="#" id="4">
+                  <option class="p-500" value="#">1 guest</option>
+                  <option value="#">1</option>
+                  <option value="#">2</option>
+                  <option value="#">3</option>
+                  <option value="#">4</option>
+                  <option value="#">5</option>
+                  <option value="#">6</option>
+                  <option value="#">7</option>
+                  <option value="#">8</option>
+                  <option value="#">9</option>
+                  <option value="#">10</option>
+                </select>
+              </div>
+            </div>
+            <button class="search-button">
+              <img src="./assets/images/icons/seacrh.svg" alt="seacrh" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <main>
+        <div class="hero-search seacrh-column d-none">
+          <div class="search-location">
+            <div class="left-side">
+              <img src="./assets/images/icons/location.svg" alt="location" />
+            </div>
+            <div class="right-side">
+              <p class="p-300">Location</p>
+              <select name="#" id="12">
+                <option class="p-500" value="#">Explore</option>
+                <option value="#">USA</option>
+                <option value="#">Italia</option>
+                <option value="#">China</option>
+              </select>
+            </div>
+          </div>
+          <div class="search-activity">
+            <div class="left-side">
+              <img src="./assets/images/icons/ride.svg" alt="ride" />
+            </div>
+            <div class="right-side">
+              <p class="p-300">Activity</p>
+              <select name="#" id="5">
+                <option class="p-500" value="#">All Activities</option>
+                <option value="#">Skiing</option>
+                <option value="#">Hiking</option>
+                <option value="#">Swimming</option>
+              </select>
+            </div>
+          </div>
+          <div class="search-date">
+            <div class="left-side">
+              <img src="./assets/images/icons/date.svg" alt="date" />
+            </div>
+            <div class="right-side">
+              <p class="p-300">When</p>
+              <input type="date" value="" max="2026-12-31" />
+            </div>
+          </div>
+          <div class="search-guests">
+            <div class="left-side">
+              <img src="./assets/images/icons/group.svg" alt="date" />
+            </div>
+            <div class="right-side">
+              <p class="p-300">Guests</p>
+              <select name="#" id="6">
+                <option class="p-500" value="#">1 guest</option>
+                <option value="#">1</option>
+                <option value="#">2</option>
+                <option value="#">3</option>
+                <option value="#">4</option>
+                <option value="#">5</option>
+                <option value="#">6</option>
+                <option value="#">7</option>
+                <option value="#">8</option>
+                <option value="#">9</option>
+                <option value="#">10</option>
+              </select>
+            </div>
+          </div>
+          <button class="search-button">
+            <img src="./assets/images/icons/seacrh.svg" alt="seacrh" />
+          </button>
+        </div>
+        <div class="popular-destinations">
+          <h2>Popular Destinations</h2>
+          <div class="popular-cards cards">
+            <div class="card">
+              <div class="top">
+                <img
+                  src="./assets/images/popular-card/img-1.svg"
+                  alt="...loading"
+                />
+              </div>
+              <div class="bottom">
+                <p class="p-500">Big Sur</p>
+                <p class="p-400">California, USA</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="top">
+                <img
+                  src="./assets/images/popular-card/img-2.svg"
+                  alt="...loading"
+                />
+              </div>
+              <div class="bottom">
+                <p class="p-500">Prescott</p>
+                <p class="p-400">Arizona, USA</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="top">
+                <img
+                  src="./assets/images/popular-card/img-3.svg"
+                  alt="...loading"
+                />
+              </div>
+              <div class="bottom">
+                <p class="p-500">Fort Mayers</p>
+                <p class="p-400">Florida, USA</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="top">
+                <img
+                  src="./assets/images/popular-card/img-4.svg"
+                  alt="...loading"
+                />
+              </div>
+              <div class="bottom">
+                <p class="p-500">Tucson</p>
+                <p class="p-400">Arizona, USA</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="top">
+                <img
+                  src="./assets/images/popular-card/img-5.svg"
+                  alt="...loading"
+                />
+              </div>
+              <div class="bottom">
+                <p class="p-500">St. Joseph</p>
+                <p class="p-400">Michigan, USA</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="top">
+                <img
+                  src="./assets/images/popular-card/img-6.svg"
+                  alt="...loading"
+                />
+              </div>
+              <div class="bottom">
+                <p class="p-500">Madrid</p>
+                <p class="p-400">Spain</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popular-places">
+          <div class="title">
+            <h2>Most Popular Places</h2>
+            <button class="view">
+              View all
+              <img
+                src="./assets/images/icons/arrow-right-line.svg"
+                alt="...loading"
+              />
+            </button>
+          </div>
+          <div class="content">
+            <div class="left-side">
+              <video
+                src="./video/video.mp4"
+                autoplay
+                controls
+                muted
+                loop
+              ></video>
+            </div>
+            <div class="right-side">
+              <table>
+                <tr>
+                  <th>Country</th>
+                  <th>Location</th>
+                  <th>Visitors</th>
+                </tr>
+                <tr>
+                  <td rowspan="2">Italy</td>
+                  <td>Salerno</td>
+                  <td>125.000</td>
+                </tr>
+                <tr>
+                  <td class="n-border">Lake Como</td>
+                  <td class="n-border">85.000</td>
+                </tr>
+                <tr>
+                  <td>India</td>
+                  <td>Udaipur</td>
+                  <td>100.000</td>
+                </tr>
+                <tr>
+                  <td>United States</td>
+                  <td>Los Angeles</td>
+                  <td>80.000</td>
+                </tr>
+                <tr>
+                  <td colspan="2"><b>TOTAL:</b></td>
+                  <td><b>390.000</b></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="activities">
+          <div class="title">
+            <h2>Activities</h2>
+            <button class="view">
+              View all
+              <img
+                src="./assets/images/icons/arrow-right-line.svg"
+                alt="...loading"
+              />
+            </button>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <img src="./assets/images/active/img.svg" alt="...loading" />
+              <p class="p-500">Sailing</p>
+            </div>
+            <div class="card">
+              <img src="./assets/images/active/img-1.svg" alt="...loading" />
+              <p class="p-500">Climbing</p>
+            </div>
+            <div class="card">
+              <img src="./assets/images/active/img-2.svg" alt="...loading" />
+              <p class="p-500">Skiing</p>
+            </div>
+            <div class="card">
+              <img src="./assets/images/active/img-3.svg" alt="...loading" />
+              <p class="p-500">Hiking</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-section">
+          <div class="left-side">
+            <h2>About Us</h2>
+            <p class="p-400">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse a sapien justo. Nulla facilisis tristique imperdiet.
+              Nullam a placerat odio. Sed in ex augue. Aliquam porta consectetur
+              lorem sit amet ultrices. Class aptent taciti sociosqu ad litora
+              torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+            <button class="view">
+              Read more
+              <img
+                src="./assets/images/icons/arrow-right-line.svg"
+                alt="...loading"
+              />
+            </button>
+          </div>
+          <div class="right-side">
+            <img src="./assets/images/about/image23.svg" alt="...loading" />
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-content">
+          <div class="footer-brand">
+            <img
+              src="./assets/images/logo2.svg"
+              alt="2rism Logo"
+              class="footer-logo"
+            />
+            <p class="p-400">
+              We always make our customers happy by providing as many choices as
+              possible.
+            </p>
+            <div class="footer-social-media">
+              <a href="#" class="social-link">
+                <img
+                  src="./assets/images/icons/socialmedia/Group.svg"
+                  alt="Facebook"
+                />
+              </a>
+              <a href="#" class="social-link">
+                <img
+                  src="./assets/images/icons/socialmedia/twitter-fill.svg"
+                  alt="Twitter"
+                />
+              </a>
+              <a href="#" class="social-link">
+                <img
+                  src="./assets/images/icons/socialmedia/instagram-fill.svg"
+                  alt="Instagram"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3 class="footer-heading p-500">About</h3>
+              <ul class="no-wrap">
+                <li><a href="#" class="footer-link">About Us</a></li>
+                <li><a href="#" class="footer-link">Features</a></li>
+                <li><a href="#" class="footer-link">News</a></li>
+                <li><a href="#" class="footer-link">Menu</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-heading p-500">Company</h3>
+              <ul class="no-wrap">
+                <li><a href="#" class="footer-link">Why 2rism</a></li>
+                <li><a href="#" class="footer-link">Partner With Us</a></li>
+                <li><a href="#" class="footer-link">FAQ</a></li>
+                <li><a href="#" class="footer-link">Blog</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-heading p-500">Support</h3>
+              <ul class="no-wrap">
+                <li><a href="#" class="footer-link">Account</a></li>
+                <li><a href="#" class="footer-link">Support Center</a></li>
+                <li><a href="#" class="footer-link">Feedback</a></li>
+                <li><a href="#" class="footer-link">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-subscribe">
+            <h3 class="subscribe-heading p-500">
+              Subscribe on our destination review newsletters
+            </h3>
+            <div class="subscribe">
+              <form
+                class="subscribe-form"
+                action="/"
+                method="post"
+                novalidate
+                autocomplete="off"
+              >
+                <div class="placeholder-contianer">
+                  <img
+                    class="email-img"
+                    src="./assets/images/icons/email.svg"
+                    alt="...loading"
+                  />
+                  <input
+                    type="email"
+                    class="subscribe-input"
+                    placeholder="Your email"
+                    maxlength="30"
+                  />
+                </div>
+
+                <button type="submit" class="subscribe-button">
+                  <img
+                    src="./assets/images/icons/submit.svg"
+                    alt="...loading"
+                  />
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
